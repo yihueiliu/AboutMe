@@ -1,0 +1,363 @@
+/* 深藍、黃 */
+:root {
+    --bs-primary: #deb049;/*#ffc542  ; */
+    --bs-primary-rgb: 222, 176, 73;/* 255, 197, 66; */
+    --bs-secondary: #08142d; 
+    --bs-secondary-rgb: 8, 20, 45; 
+    --bs-third: rgb(101 174 219);
+    --bs-body-bg: #fff;
+    --bs-title-color: #08142d;
+    --bs-body-color: #2a2d33;
+    --bs-masthead: #0c1a3f;
+    --bs-body-font-size: 1.2rem;
+    --bs-body-line-height: 1.7;
+}
+
+/* 深藍、淺藍
+:root {
+    --bs-primary: #bae8e8 ;
+    --bs-primary-rgb: 186, 232, 232;
+    --bs-secondary: #08142d; 
+    --bs-secondary-rgb: 8, 20, 45; 
+    --bs-body-bg: #fff;
+}
+*/
+
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+    color: var(--bs-primary);
+    text-decoration: none;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+    color: var(--bs-primary);
+}
+
+a {
+    color: #d39d26;/* var(--bs-primary); /*#7abcc5;*/ /* rgb(101 174 219);*/
+    text-decoration: none;
+}
+a:hover {
+    color: #aa8738;
+    text-decoration: underline;
+}
+.text-primary {
+    color: var(--bs-third) !important; /* #7abcc5      var(--bs-primary);*/
+    font-weight: 600;
+}
+.text-secondary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+}
+.divider-custom .divider-custom-line {
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-secondary);
+}
+.divider-custom .divider-custom-icon {
+    color: var(--bs-secondary);
+}
+.portfolio .portfolio-item .portfolio-item-caption {
+    background-color: rgba(var(--bs-primary-rgb), 0.85)
+}
+.btn-primary {
+    color: #fff;
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #aa8738;
+    border-color: #aa8738;
+  }
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+color: #fff;
+background-color: #aa8738;
+border-color: #aa8738;
+box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary), 0.5);
+}
+.btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
+color: #fff;
+background-color: #aa8738;
+border-color: #aa8738;
+}
+.btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
+box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary), 0.5);
+}
+.btn-primary:disabled, .btn-primary.disabled {
+color: #fff;
+background-color: var(--bs-primary);
+border-color: var(--bs-primary);
+}
+h3, .h3 {
+    color: var(--bs-title-color);
+}
+
+
+/* 上面是在調整體顏色 */
+
+/* 左右對齊
+.resume-item .SelfIntro{
+    text-align: justify;
+}
+#experience .resume-item .main-list{
+    text-align: justify;
+}
+.modal-p{
+    text-align: justify;
+}
+*/
+
+.masthead .masthead-avatar {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.masthead {
+    padding-top: calc(6rem + 33px);
+    padding-bottom: 4rem;
+    background-color: #a8e8e8; /* #bae8e8; */
+    color: var(--bs-masthead);
+}
+
+#mainNav > div > a:hover {
+    text-decoration: none;
+}
+
+#page-top > header > div > p > a {
+    color: var(--bs-masthead);
+    text-decoration: none;
+}
+#page-top > header > div > p > a:hover {
+    color: #387784;
+    text-decoration: underline;
+}
+
+.divider-custom.divider-light {
+    margin: 1rem 0px 0.25rem;
+}
+.divider-custom.divider-light .divider-custom-line {
+    background-color: var(--bs-masthead);
+}
+.divider-custom.divider-light .divider-custom-icon {
+    color: var(--bs-masthead);
+}
+
+.hashtags{
+    margin-top: 1.5rem;
+}
+.hashtag {
+    background-color: var(--bs-primary);/* #CAAD5F; */
+    color: white;
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+    border-radius: 15px;
+    margin-right: 0.4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 44px;
+    white-space:nowrap;
+}
+
+#about > div > div.resume-item.mb-4.mx-sm-5 > div.social-icons {
+    margin-top: 1.5rem;
+   /* margin-bottom: 1.5rem;*/
+}
+
+#about > div > div.resume-item.mb-4.mx-sm-5 > div.social-icons > a {
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #495057;
+    color: #fff;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.65rem;
+    line-height: 3.5rem;
+    margin-right: 0.7rem;
+    padding-top: 0rem;
+}
+
+.page-section {
+    padding: 1.75rem 0;
+}
+
+#experience li:not(:last-child) {
+    margin-bottom: 0.75rem;
+}
+
+.empha {
+    color: #bd5d38;
+    font-weight: 600;
+}
+.empha-intro {
+    font-weight: 700;
+}
+.subheading {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    /* font-family: 'Saira Semi Condensed', sans-serif, -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    */
+    font-size: 1.3rem;
+    /*color: var(--bs-title-color);*/
+}
+
+.memo {
+    color: var(--bs-primary); /* #D0104C; */
+    font-size: 1.0rem;
+}
+
+#portfolio  a {
+    color: black;
+    text-decoration: none;
+}
+
+#portfolio  a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+.note {
+    font-size: 1.0rem;
+}
+
+.empha-black {
+    color: #d39d26; /* var(--bs-primary);/* #bd5d38;*/
+    font-weight: 600;
+}
+
+.modal__header {
+    /* border-bottom: 1px solid #717171; */
+    border-bottom: 2px solid #1a25304f;
+    /* color: #E1E1E1; */
+}
+
+.portfolio-modal .portfolio-modal-title {
+    font-size: 1.8rem;
+    line-height: 2.6rem; 
+}
+
+.portfolio-modal .modal-subtitle{
+    font-size: 1.4rem;
+}
+
+.modal-content {
+    background-color: #f5f4f2;
+}
+
+#portfolio .row {
+    --bs-gutter-x: 2rem;
+}
+
+.file {
+   color: var(--bs-third); 
+    text-decoration: none;
+}
+.file:hover {
+    color: rgb(72 124 157); 
+    text-decoration: underline;
+}
+.data {
+    color: #c67a4d; 
+     text-decoration: none;
+ }
+ .data:hover {
+     color: #9b5f3c; 
+     text-decoration: underline;
+ }
+ .other {
+    color: var(--bs-primary); 
+     text-decoration: none;
+ }
+ .other:hover {
+     color: #aa8738; 
+     text-decoration: underline;
+ }
+ 
+.web-link-light {
+    color: var(--bs-third);
+    text-decoration: none;
+}
+.web-link-light:hover {
+    color: rgb(72 124 157);
+    text-decoration: underline;
+}
+.web-scrape-link {
+    color: var(--bs-body-color);
+    font-weight: 500;
+    text-decoration: underline;
+}
+.web-scrape-link:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+.footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #a8e8e8;
+    color: var(--bs-secondary);
+}
+.footer a{
+    color: #bd5d38;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.footer .social-icons {
+    margin-top: 1.5rem;
+   /* margin-bottom: 1.5rem;*/
+}
+.footer .social-icons a {
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    font-size: 1.4rem;
+    background-color: #2c3e50;
+    color: #fff;
+    border-radius: 100%;
+    text-align: center;
+    margin-right: 0.5rem;
+    padding-top: 0rem;
+}
+
+
+
+@media (min-width: 992px){
+    #mainNav {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        transition: padding-top 0.3s, padding-bottom 0.3s;
+    }
+    #mainNav.navbar-shrink {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+        color: #fff;
+        background: var(--bs-primary);
+    }
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+        color: #fff;
+        background: var(--bs-primary);
+      }
+    .px-lg-3 {
+        padding-right: 0.5rem !important;
+        padding-left: 0.5rem !important;
+    }
+}
+
+@media (max-width: 576px){
+    .resume-item{
+        margin-right: 1rem;
+        margin-left: 1rem;
+        text-align: left;
+    }
+    .portfolio-row{
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+    .portfolio-modal .portfolio-modal-title {
+        font-size: 1.65rem;
+        line-height: 2.5rem;
+    }
+}
