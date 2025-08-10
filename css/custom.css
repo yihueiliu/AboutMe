@@ -189,6 +189,10 @@ h3, .h3 {
     color: #bd5d38;
     font-weight: 600;
 }
+.empha2 {
+    color: #000000;
+    font-weight: 600;
+}
 .empha-intro {
     font-weight: 700;
 }
@@ -318,6 +322,24 @@ h3, .h3 {
     text-align: center;
     margin-right: 0.5rem;
     padding-top: 0rem;
+}
+/* 讓 footer / copyright 真的貼滿左右，不受 Bootstrap 預設內距影響 */
+.footer .container-fluid,
+.copyright .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* 拿掉 row 的水平 gutters，避免左右再被撐開 */
+.footer .row,
+.copyright .row {
+  --bs-gutter-x: 0;
+}
+
+/* 如果還看到邊角露白，通常是圓角或陰影造成，這裡一併清掉 */
+.footer, .footer * {
+  border-radius: 0;
+  box-shadow: none;
 }
 
 
