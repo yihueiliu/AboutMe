@@ -33,7 +33,7 @@
 }
 
 a {
-    color: #d39d26;/* var(--bs-primary); /*#7abcc5;*/ /* rgb(101 174 219);*/
+    color: var(--bs-body-color);   /*#d39d26;*/ /* var(--bs-primary); /*#7abcc5;*/ /* rgb(101 174 219);*/
     text-decoration: none;
 }
 a:hover {
